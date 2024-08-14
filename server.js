@@ -11,7 +11,7 @@ const port = process.env.PORT || 8080;
 
 // Middleware
 app.use(cors({
-  origin:'http://localhost:5173'
+  origin: ['http://localhost:5173', 'https://datatrix.in']
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
