@@ -12,7 +12,7 @@ const designForge = new mongoose.Schema({
   description: { type: String },
   price: { type: String, default: true },
   totalSlots: { type: Number, default: 70 },
-  availableSlots: { type: Number, default: 70 },
+  availableSlots: { type: Number, default: true },
   participants: [participantSchema],
 });
 
