@@ -570,7 +570,7 @@ const designforgeSlots = async () => {
 designforgeSlots();
 
 // Get slots of the event
-app.get("/speed-regex-slots", async (req, res) => {
+app.get("/design-forge-slots", async (req, res) => {
   try {
     const quiz = await DesignForge.findOne();
     if (!quiz) {
@@ -584,7 +584,7 @@ app.get("/speed-regex-slots", async (req, res) => {
 });
 
 // Register participant
-app.post("/speed-regex-register", async (req, res) => {
+app.post("/design-forge-register", async (req, res) => {
   const { name, email, college, phoneNumber } = req.body;
   console.log("Recieved Data", req.body);
   // Validate required fields
