@@ -13,7 +13,7 @@ const participantSchema = new mongoose.Schema({
 const uiuxWorkshop = new mongoose.Schema({
   title: { type: String, default: true },
   description: { type: String },
-  price: { type: Number, default: 150 },
+  price: { type: Number, default: 100 },
   totalSlots: { type: Number, default: 100 },
   availableSlots: { type: Number, default: 100 },
   participant:[participantSchema]
